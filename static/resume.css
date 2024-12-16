@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.resume-container {
+    display: flex;
+    width: 80%;
+    margin: 30px auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+    background-color: #333;
+    color: white;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-pic img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.left-section h3 {
+    margin-top: 20px;
+}
+
+.left-section ul {
+    list-style: none;
+    padding: 0;
+    line-height: 1.8;
+}
+
+.right-section {
+    width: 70%;
+    padding: 20px;
+}
+
+.right-section h3 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.education, .experience {
+    margin: 20px 0;
+}
+
+.back-btn, button {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.resume-container {
+    display: flex;
+    width: 80%;
+    margin: 30px auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+    background-color: #333;
+    color: white;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-pic img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.left-section h3 {
+    margin-top: 20px;
+}
+
+.left-section ul {
+    list-style: none;
+    padding: 0;
+    line-height: 1.8;
+}
+
+.right-section {
+    width: 70%;
+    padding: 20px;
+}
+
+.right-section h3 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.education, .experience {
+    margin: 20px 0;
+}
+
+.back-btn, button {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Media Queries */
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .left-section {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .right-section {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .profile-pic img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .resume-container {
+        width: 95%;
+    }
+
+    .left-section {
+        padding: 10px;
+    }
+
+    .profile-pic img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .right-section {
+        padding: 10px;
+    }
+
+    .back-btn, button {
+        padding: 8px 12px;
+        margin: 10px;
+        font-size: 0.9rem;
+    }
+
+    .right-section h3 {
+        font-size: 1.2rem;
+    }
+}

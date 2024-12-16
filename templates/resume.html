@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Resume</title>
+    <link rel="stylesheet" href="/static/resume.css">
+</head>
+<body>
+    <div class="resume-container">
+        <div class="left-section">
+            <div class="profile-pic">
+                <!-- <img src="{{ photo }}" alt="Profile Photo"> -->
+            </div>
+            <h2>{{ name }}</h2>
+            <p>{{ designation }}</p>
+            <hr>
+            <h3>About Me</h3>
+            <p>{{ about }}</p>
+            <h3>Contact</h3>
+            <ul>
+                <li>📞 {{ phone }}</li>
+                <li>📧 {{ email }}</li>
+                <li>📍 {{ address }}</li>
+            </ul>
+            <h3>Skills</h3>
+            <ul>
+                {% for skill in skills.split(',') %}
+                    <li>✔ {{ skill.strip() }}</li>
+                {% endfor %}
+            </ul>
+            <h3>Languages</h3>
+            <ul>
+                {% for language in languages.split(',') %}
+                    <li>🌐 {{ language.strip() }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="right-section">
+            <h3>Education</h3>
+            <div class="education">
+                <p><strong>{{ education_title }}</strong></p>
+                <p>{{ education_institution }}</p>
+                <p>{{ education_year }}</p>
+            </div>
+            <h3>Experience</h3>
+            <div class="experience">
+                <p><strong>{{ experience_title }}</strong></p>
+                <p>{{ experience_company }}</p>
+                <p>{{ experience_year }}</p>
+                <p>{{ experience_details }}</p>
+            </div>
+        </div>
+    </div>
+    <a href="/" class="back-btn">Go Back</a>
+    <form action="/download_pdf" method="POST">
+        <button type="submit">Download as PDF</button>
+    </form>
+</body>
+</html>
